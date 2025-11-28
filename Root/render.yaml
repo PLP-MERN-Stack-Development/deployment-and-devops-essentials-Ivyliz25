@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: mern-server
+    env: node
+    buildCommand: cd server && npm ci && npm run build
+    startCommand: cd server && npm start
+    plan: free
